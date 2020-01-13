@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yjG-b8-31x" customClass="AttachmentCVCell" customModule="HandzapAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dib-m8-A1j">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LgN-oR-kSv">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play icon" translatesAutoresizingMaskIntoConstraints="NO" id="mK8-bn-gUk">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LgN-oR-kSv" secondAttribute="trailing" id="AaS-dw-tDe"/>
+                            <constraint firstAttribute="bottom" secondItem="LgN-oR-kSv" secondAttribute="bottom" id="Czd-CP-0E2"/>
+                            <constraint firstItem="LgN-oR-kSv" firstAttribute="leading" secondItem="dib-m8-A1j" secondAttribute="leading" id="FzM-Jd-R2Q"/>
+                            <constraint firstAttribute="trailing" secondItem="mK8-bn-gUk" secondAttribute="trailing" id="NR1-Q7-PWa"/>
+                            <constraint firstItem="mK8-bn-gUk" firstAttribute="top" secondItem="dib-m8-A1j" secondAttribute="top" id="P7o-gx-hPe"/>
+                            <constraint firstItem="LgN-oR-kSv" firstAttribute="top" secondItem="dib-m8-A1j" secondAttribute="top" id="Zdp-je-cgD"/>
+                            <constraint firstItem="mK8-bn-gUk" firstAttribute="centerY" secondItem="LgN-oR-kSv" secondAttribute="centerY" id="b76-p4-YgH"/>
+                            <constraint firstItem="mK8-bn-gUk" firstAttribute="centerX" secondItem="LgN-oR-kSv" secondAttribute="centerX" id="bEg-K9-5pM"/>
+                            <constraint firstAttribute="bottom" secondItem="mK8-bn-gUk" secondAttribute="bottom" id="fEC-1P-7nA"/>
+                            <constraint firstItem="mK8-bn-gUk" firstAttribute="leading" secondItem="dib-m8-A1j" secondAttribute="leading" id="tRN-gX-BB9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dib-m8-A1j" firstAttribute="centerX" secondItem="yjG-b8-31x" secondAttribute="centerX" id="4Ve-nW-7Qp"/>
+                <constraint firstItem="dib-m8-A1j" firstAttribute="leading" secondItem="yjG-b8-31x" secondAttribute="leading" id="IdN-li-teW"/>
+                <constraint firstItem="dib-m8-A1j" firstAttribute="top" secondItem="yjG-b8-31x" secondAttribute="top" id="Ist-wO-nlX"/>
+                <constraint firstAttribute="bottom" secondItem="dib-m8-A1j" secondAttribute="bottom" id="hP6-a3-qev"/>
+                <constraint firstItem="dib-m8-A1j" firstAttribute="centerY" secondItem="yjG-b8-31x" secondAttribute="centerY" id="kQp-dY-s2w"/>
+                <constraint firstAttribute="trailing" secondItem="dib-m8-A1j" secondAttribute="trailing" id="lnU-cl-yG5"/>
+            </constraints>
+            <size key="customSize" width="77" height="39"/>
+            <connections>
+                <outlet property="imgIcon" destination="LgN-oR-kSv" id="Cyi-Gr-kSf"/>
+                <outlet property="playIcon" destination="mK8-bn-gUk" id="noS-GG-J7i"/>
+            </connections>
+            <point key="canvasLocation" x="46.399999999999999" y="47.676161919040482"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="play icon" width="32" height="32"/>
+    </resources>
+</document>
