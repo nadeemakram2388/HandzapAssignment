@@ -1,0 +1,6 @@
+framework module Pods_HandzapAssignment {
+  umbrella header "Pods-HandzapAssignment-umbrella.h"
+
+  export *
+  module * { export * }
+}
